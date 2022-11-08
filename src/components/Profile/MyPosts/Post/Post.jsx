@@ -1,10 +1,16 @@
 import React from "react";
 import s from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={s.item}>
-            Post 1
+            <img
+                src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
+                alt='portrait'/>
+            {props.message}
+            <div>
+                <span>like</span> {props.likesCount}
+            </div>
         </div>
     )
 }
