@@ -26,3 +26,7 @@ const App = () => {
 }
 
 export default App;
+
+/*
+Component - function which returns jsx(html) markup
+ */
