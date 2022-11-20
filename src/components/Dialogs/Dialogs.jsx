@@ -6,7 +6,7 @@ const Dialogs = (props) =>{
     return(
         <div className={s.dialogs}>
             <div className={s.dialogItems}>
-                <div className={s.dialog}>Leo</div>
+                <div className={s.dialog + ' ' + s.active}>Leo</div>
                 <div className={s.dialog}>Maria</div>
                 <div className={s.dialog}>Stan</div>
             </div>
