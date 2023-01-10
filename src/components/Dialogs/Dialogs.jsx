@@ -11,10 +11,10 @@ const Dialogs = (props) =>{
                     <NavLink to='/dialogs/1'>Leo </NavLink>
                 </div>
                 <div className={s.dialog}>
-                    <NavLink to='/dialogs/1'>Maria </NavLink>
+                    <NavLink to='/dialogs/2'>Maria </NavLink>
                 </div>
                 <div className={s.dialog}>
-                    <NavLink to='/dialogs/1'>Stan </NavLink>
+                    <NavLink to='/dialogs/3'>Stan </NavLink>
                 </div>
             </div>
             <div className={s.messages}>
