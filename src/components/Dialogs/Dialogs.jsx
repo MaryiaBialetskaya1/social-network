@@ -8,7 +8,7 @@ const Dialogs = (props) =>{
             <div className={s.dialogItems}>
                 <div className={s.dialog + ' ' + s.active}>Leo</div>
                 <div className={s.dialog}>Maria</div>
-                <div className={s.dialog}>Stan</div>
+                <div className={s.dialog}>Stas</div>
             </div>
             <div className={s.messages}>
                 <div className={s.message}>Hi, how are you</div>
