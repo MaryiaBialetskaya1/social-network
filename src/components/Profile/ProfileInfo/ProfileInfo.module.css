@@ -3,3 +3,7 @@
     height: 100px;
     object-fit: cover;
 }
+
+.descriptionBlock{
+    padding: 10px;
+}
