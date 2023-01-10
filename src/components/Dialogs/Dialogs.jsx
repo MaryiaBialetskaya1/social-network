@@ -13,7 +13,7 @@ const Dialogs = (props) =>{
             <div className={s.messages}>
                 <div className={s.message}>Hi, how are you</div>
                 <div className={s.message}>Come with me to cinema</div>
-                <div className={s.message}>I am going to shopping do you wanna go?</div>
+                <div className={s.message}>I am going to shopping, do you wanna go?</div>
             </div>
         </div>
     )
