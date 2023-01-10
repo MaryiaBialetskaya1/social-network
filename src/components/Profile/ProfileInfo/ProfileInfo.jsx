@@ -6,8 +6,9 @@ const ProfileInfo = () => {
     return (
         <div>
             <div>
-                <img
-                    src='https://images.unsplash.com/photo-1489535952530-0fd16a62e111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGplbGx5ZmlzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
+                <img className={s.wallpaperImages}
+                    src='https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60'
+                     //src='https://images.unsplash.com/photo-1592418239323-a823afd6138d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fGhhbXN0ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60'
                     alt='main page'/>
             </div>
             <div className={s.descriptionBlock}>
