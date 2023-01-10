@@ -7,8 +7,12 @@ const MyPosts = () => {
         <div className={s.postsBlock}>
             My posts
             <div>
-                <textarea></textarea>
-                <button>New Post</button>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>New Post</button>
+                </div>
             </div>
             <div className={s.posts}>
                 <Post message='How are you, guys?' likesCount = '0'/>
