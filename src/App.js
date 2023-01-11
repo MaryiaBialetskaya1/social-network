@@ -6,7 +6,7 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -14,11 +14,9 @@ const App = () => {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Routes>
-                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/profile" element={<Profile posts={props.posts}/>}/>
                         <Route path="/dialogs/*" element={<Dialogs/>}/>
                     </Routes>
-                    {/*{<Dialogs/>}*/}
-                    {/*{<Profile/>}*/}
                 </div>
             </div>
         </BrowserRouter>
