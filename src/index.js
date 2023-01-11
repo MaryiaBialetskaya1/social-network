@@ -5,14 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 //2. creat array of objects to dialogs
-export let dialogs = [
+let dialogs = [
     {id: 1, name: "Leo"},
     {id: 2, name: "Maria"},
     {id: 3, name: "Stanislaus"},
 ]
 
 //2. creat array of objects to messages
-export let messages = [
+let messages = [
     {id: 1, message: "Hi, how are you"},
     {id: 2, message: "Come with me to cinema"},
     {id: 3, message: "I am going to shopping, do you wanna go?"},
@@ -29,7 +29,7 @@ let posts = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App posts={posts}/>
+    <App posts={posts} dialogs={dialogs} messages={messages}/>
   </React.StrictMode>
 );
 
