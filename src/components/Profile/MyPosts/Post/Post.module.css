@@ -1,9 +1,27 @@
-.item{
-    color: greenyellow;
+.myPostBlock{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+    padding: 20px;
+    border: 1px #ece9e9 solid;
 }
-.item img{
-    width: 150px;
-    height: 150px;
+.myPostBlock img{
+    width: 80px;
+    height: 80px;
     /*border-radius: 30px;*/
     border-radius: 50%;
+}
+.postItemBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    width: 100%;
+}
+.likeSign{
+    color: green;
+    align-self: end;
 }
