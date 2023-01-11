@@ -8,9 +8,9 @@ import state from "./redux/state";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/*<App posts={posts} dialogs={dialogs} messages={messages}/>*/}
+    <App posts={state.profilePage.posts} dialogs={state.dialogsPage.dialogs} messages={state.dialogsPage.dialogs}/>
 
-      <App appState={state}/>
+      {/*<App state={state}/>*/}
   </React.StrictMode>
 );
 
