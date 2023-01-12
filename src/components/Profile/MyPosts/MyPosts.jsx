@@ -4,6 +4,9 @@ import Post from "./Post/Post";
 
 
 const MyPosts = (props) => {
+    let addPostButton = () => {
+        alert('Hello!')
+    }
     let postsElements = props.posts.map(p => <Post message={p.message} likesCount ={p.likesCount}/>)
     return (
         <div className={s.postsBlock}>
@@ -13,7 +16,7 @@ const MyPosts = (props) => {
                     <textarea className={s.textarea}></textarea>
                 </div>
                 <div className={s.buttonBlock}>
-                    <button className={s.buttonPublish} onClick={ () => { alert('Hello!')}}>Publish</button>
+                    <button className={s.buttonPublish} onClick={  addPostButton }>Publish</button>
                 </div>
             </div>
             <div className={s.posts}>
