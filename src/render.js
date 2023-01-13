@@ -14,7 +14,6 @@ export let rerenderEntireTree = (state) =>{
                  messages={state.dialogsPage.messages}
                  addPost = {addPost}
             />
-
             {/*<App state={state}/>*/}
         </React.StrictMode>
     );

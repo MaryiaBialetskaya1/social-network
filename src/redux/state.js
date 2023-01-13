@@ -22,7 +22,6 @@ let state = {
             {id: 3, message: "I am going to shopping, do you wanna go?"},
         ]
     },
-
 }
 
 export let addPost  = (postMessage) => {
@@ -34,5 +33,4 @@ export let addPost  = (postMessage) => {
     state.profilePage.posts.push(newPost);
     rerenderEntireTree(state);
 }
-
 export default state;
