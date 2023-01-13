@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import state from "./redux/state";
+import state, {addPost} from "./redux/state";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// addPost('yoy');
 root.render(
   <React.StrictMode>
-    <App posts={state.profilePage.posts} dialogs={state.dialogsPage.dialogs} messages={state.dialogsPage.messages}/>
+    <App posts={state.profilePage.posts}
+         dialogs={state.dialogsPage.dialogs}
+         messages={state.dialogsPage.messages}
+         addPost = {addPost}
+    />
 
       {/*<App state={state}/>*/}
   </React.StrictMode>
