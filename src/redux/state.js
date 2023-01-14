@@ -9,6 +9,7 @@ let state = {
             {id: 4, message: "Life is what happens when you're busy making other plans. -John Lennon", likesCount: 2},
             {id: 5, message: "Always remember that you are absolutely unique. Just like everyone else. -Margaret Mead\n", likesCount: 12},
         ],
+        newPostText: 'React/Redux',
     },
     dialogsPage: {
         dialogs: [
@@ -22,6 +23,7 @@ let state = {
             {id: 3, message: "I am going to shopping, do you wanna go?"},
         ]
     },
+
 }
 
 export let addPost  = (postMessage) => {
