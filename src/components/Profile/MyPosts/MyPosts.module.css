@@ -8,6 +8,8 @@
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    width: 100%;
+    border-radius: 0 0 85% 85% / 30%;
 }
 .textareaBlock{
     background-color: #fdfdfd;
