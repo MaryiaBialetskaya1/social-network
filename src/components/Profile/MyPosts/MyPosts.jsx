@@ -9,7 +9,6 @@ const MyPosts = (props) => {
 
     let addPostButton = () => {
         props.addPost();
-        props.updateNewPostText('');
     }
 
     let onPostChange = () => {
