@@ -4,7 +4,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import {addPost, updateNewPostText} from "./redux/state";
 
 
@@ -25,8 +24,6 @@ let rerenderEntireTree = (state) =>{
         </React.StrictMode>
     );
 }
-reportWebVitals();
-
 
 rerenderEntireTree(state);
 subscribe(rerenderEntireTree);
