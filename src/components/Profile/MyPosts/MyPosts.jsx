@@ -3,13 +3,12 @@ import s from './MyPosts.module.css';
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-    debugger;
+
 
     let newPostElement = React.createRef();
 
     let addPostButton = () => {
-        let text = newPostElement.current.value;
-        props.addPost(text);
+        props.addPost();
         props.updateNewPostText('');
     }
 
