@@ -27,9 +27,14 @@ let store = {
     _callSubscriber  () {
         console.log('State has been changed')
     },
+
     getState () {
          return this._state;
     },
+    subscribe (observer) {
+        this._callSubscriber = observer; //do not!!! use let rerenderEntireTree = observer (патерн)
+    },
+
     addPost  ()  {
         let newPost = {
             id: 1,
@@ -44,9 +49,7 @@ let store = {
         this._state.profilePage.newPostText = newText;
         this._callSubscriber(this._state);
     },
-    subscribe (observer) {
-        this._callSubscriber = observer; //do not!!! use let rerenderEntireTree = observer (патерн)
-    }
+
 }
 export default store;
 window.state = store;
