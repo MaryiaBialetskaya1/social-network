@@ -1,5 +1,5 @@
 let store = {
-     _state: {
+    _state: {
         profilePage: {
             posts: [
                 {id: 1, message: "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs", likesCount: 12},
@@ -24,11 +24,11 @@ let store = {
         },
 
     },
-    getState () {
-         return this._state;
-    },
     _callSubscriber  () {
         console.log('State has been changed')
+    },
+    getState () {
+         return this._state;
     },
     addPost  ()  {
         let newPost = {
