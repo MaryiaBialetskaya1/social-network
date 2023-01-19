@@ -10,7 +10,6 @@ debugger;
             <MyPosts posts={props.posts}
                      newPostText={props.newPostText}
                      dispatch={props.dispatch}
-                     // updateNewPostText={props.updateNewPostText}
             />
         </div>
     )

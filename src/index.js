@@ -21,7 +21,6 @@ let rerenderEntireTree = (state) =>{
                  newPostText={state.profilePage.newPostText}
                  messages={state.dialogsPage.messages}
                  dispatch={store.dispatch.bind(store)}
-                 // updateNewPostText={store.updateNewPostText.bind(store)}
             />
             {/*<App state={state}/>*/}
         </React.StrictMode>

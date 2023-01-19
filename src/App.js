@@ -20,7 +20,6 @@ const App = (props) => {
                             posts={props.posts}
                             newPostText={props.newPostText}
                             dispatch={props.dispatch}
-                            // updateNewPostText={props.updateNewPostText}
                         />}
                         />
 
