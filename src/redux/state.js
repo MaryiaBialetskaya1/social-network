@@ -27,7 +27,7 @@ let store = {
                 {id: 2, message: "Come with me to cinema"},
                 {id: 3, message: "I am going to shopping, do you wanna go?"},
             ],
-            newMessageBody: ""
+            newMessageBody: "Hello",
         },
 
     },
@@ -55,13 +55,13 @@ let store = {
         } else if(action.type === UPDATE_NEW_POST_TEXT){
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
-        } else if(action.type === UPDATE_NEW_MESSAGE_BODY){
-            this._state.dialogsPage.newMessageBody = action.body;
-            this._callSubscriber(this._state);
         } else if(action.type === SEND_MESSAGE){
             let body = this._state.dialogsPage.newMessageBody;
             this._state.dialogsPage.newMessageBody = "";
             this._state.dialogsPage.messages.push({id: 4, message: body})
+            this._callSubscriber(this._state);
+        } else if(action.type === UPDATE_NEW_MESSAGE_BODY) {
+            this._state.dialogsPage.newMessageBody = action.body;
             this._callSubscriber(this._state);
         }
     }
