@@ -27,7 +27,7 @@ let store = {
                 {id: 2, message: "Come with me to cinema"},
                 {id: 3, message: "I am going to shopping, do you wanna go?"},
             ],
-            newMessageBody: '',
+            newMessageBody: ''
         },
 
     },
