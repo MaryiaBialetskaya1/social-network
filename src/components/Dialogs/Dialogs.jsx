@@ -6,6 +6,7 @@ import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/state
 
 const Dialogs = (props) =>{
     let newMessageBody = props.newMessageBody;
+
     let onSendMessageClick = () => {
         let action = sendMessageCreator();
         props.dispatch(action);
@@ -34,8 +35,9 @@ const Dialogs = (props) =>{
                             placeholder='Enter your message'>
                         </textarea>
                     </div>
-                    <div><button
-                        onClick={ onSendMessageClick }>Send</button></div>
+                    <div>
+                        <button onClick={ onSendMessageClick }>Send</button>
+                    </div>
                 </div>
             </div>
         </div>

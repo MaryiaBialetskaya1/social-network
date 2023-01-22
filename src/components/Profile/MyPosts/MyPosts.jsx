@@ -5,6 +5,8 @@ import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../red
 
 
 const MyPosts = (props) => {
+    let newPostText = props.newPostText;
+
     let newPostElement = React.createRef();
 
     let addPostButton = () => {
@@ -24,10 +26,16 @@ const MyPosts = (props) => {
             <h3 className={s.headerText}>My posts</h3>
             <div className={s.textareaBlock}>
                 <div>
-                    <textarea className={s.textarea} onChange={onPostChange}  ref={newPostElement} value={props.newPostText}></textarea>
+                    <textarea className={s.textarea}
+                              onChange={onPostChange}
+                              ref={newPostElement}
+                              value={newPostText}>
+
+                    </textarea>
                 </div>
                 <div className={s.buttonBlock}>
-                    <button className={s.buttonPublish} onClick={  addPostButton }>Publish</button>
+                    <button className={s.buttonPublish}
+                            onClick={  addPostButton }>Publish</button>
                 </div>
             </div>
             <div className={s.posts}>

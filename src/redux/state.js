@@ -27,7 +27,7 @@ let store = {
                 {id: 2, message: "Come with me to cinema"},
                 {id: 3, message: "I am going to shopping, do you wanna go?"},
             ],
-            newMessageBody: ''
+            newMessageBody: ""
         },
 
     },
@@ -49,7 +49,7 @@ let store = {
                 message: this._state.profilePage.newPostText,
                 likesCount: 0
             }
-            this._state.profilePage.newPostText = '';
+            this._state.profilePage.newPostText = "";
             this._state.profilePage.posts.push(newPost);
             this._callSubscriber(this._state);
         } else if(action.type === UPDATE_NEW_POST_TEXT){
@@ -60,7 +60,7 @@ let store = {
             this._callSubscriber(this._state);
         } else if(action.type === SEND_MESSAGE){
             let body = this._state.dialogsPage.newMessageBody;
-            this._state.dialogsPage.newMessageBody = '';
+            this._state.dialogsPage.newMessageBody = "";
             this._state.dialogsPage.messages.push({id: 4, message: body})
             this._callSubscriber(this._state);
         }
