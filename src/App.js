@@ -19,7 +19,6 @@ const App = (props) => {
                             messages={props.messages}
                             dialogs={props.dialogs}
                             dispatch={props.dispatch}
-                            //store={props.store}
                         />}
                         />
                         <Route path="/profile" element={<Profile

@@ -15,15 +15,12 @@ debugger;
     root.render(
         <React.StrictMode>
             <App
-                posts={state.profilePage.posts}
-                 dialogs={state.dialogsPage.dialogs}
-                 newPostText={state.profilePage.newPostText}
-                 messages={state.dialogsPage.messages}
-                 dispatch={store.dispatch.bind(store)}
-                 store={store}
-                // state={state}
-                // dispatch={store.dispatch.bind(store)}
-                // store={store}
+                posts={state.profileReducer.posts}
+                dialogs={state.dialogsReducer.dialogs}
+                newPostText={state.profileReducer.newPostText}
+                messages={state.dialogsReducer.messages}
+                dispatch={store.dispatch.bind(store)}
+                store={store}
             />
             {/*<App state={state}/>*/}
         </React.StrictMode>
