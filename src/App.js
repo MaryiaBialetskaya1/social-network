@@ -5,9 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import store from "./redux/redux-store";
 
 const App = (props) => {
-    debugger;
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -22,9 +23,10 @@ const App = (props) => {
                         />}
                         />
                         <Route path="/profile" element={<Profile
-                            posts={props.posts}
-                            newPostText={props.newPostText}
-                            dispatch={props.dispatch}
+                            // posts={props.posts}
+                            // newPostText={props.newPostText}
+                            // dispatch={props.dispatch}
+                            store={store}
                         />}
                         />
 

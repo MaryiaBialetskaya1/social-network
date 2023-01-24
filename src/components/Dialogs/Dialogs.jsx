@@ -6,7 +6,7 @@ import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialo
 
 
 const Dialogs = (props) =>{
-    debugger;
+
     let newMessageBody = props.newMessageBody;
 
     let onSendMessageClick = () => {

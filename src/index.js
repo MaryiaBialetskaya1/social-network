@@ -11,7 +11,7 @@ import store from "./redux/redux-store";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let rerenderEntireTree = (state) =>{
-debugger;
+
     root.render(
         <React.StrictMode>
             <App
