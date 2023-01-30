@@ -17,8 +17,11 @@ const MyPostsContainer = (props) => {
 
     return (<MyPosts updateNewPostText={onPostChange}
                      addPost={addPost}
-                     posts={state.profilePage.posts}
-                     newPostText={state.profilePage.newPostText}
+                     posts={state.profileReducer.posts} // state.profilePage.posts
+                     newPostText={state.profileReducer.newPostText} //state.profilePage.newPostText
     />)
 }
 export default MyPostsContainer;
+
+
+// dialogs={state.diaLogsPage.dialogsData}
