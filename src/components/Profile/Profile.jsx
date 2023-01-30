@@ -12,6 +12,7 @@ debugger;
             {/*         newPostText={props.newPostText}*/}
             {/*         dispatch={props.dispatch}*/}
             {/*/>*/}
+
             <MyPostsContainer
                 store={props.store}
             />

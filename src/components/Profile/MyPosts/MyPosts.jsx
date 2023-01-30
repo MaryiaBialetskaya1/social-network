@@ -30,7 +30,7 @@ debugger;
             <div className={s.textareaBlock}>
                 <div>
                     <textarea className={s.textarea}
-                              onChange={onPostChange}
+                              onChange={ onPostChange }
                               ref={newPostElement}
                               value={newPostText}>
 
