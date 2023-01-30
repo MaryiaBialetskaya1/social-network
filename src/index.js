@@ -9,7 +9,7 @@ import store from "./redux/redux-store";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
+debugger;
 let rerenderEntireTree = (state) =>{
 
     root.render(
