@@ -3,7 +3,6 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import store from "./redux/redux-store";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
@@ -17,24 +16,12 @@ const App = (props) => {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Routes>
-                        <Route path="/dialogs/*" element={<DialogsContainer
-                            // messages={props.messages}
-                            // dialogs={props.dialogs}
-                            // dispatch={props.dispatch}
-                            store={store}
-                        />}
+                        <Route path="/dialogs/*"
+                               element={<DialogsContainer store={store}/>}
                         />
-                        <Route path="/profile" element={<Profile
-                            // posts={props.posts}
-                            // newPostText={props.newPostText}
-                            // dispatch={props.dispatch}
-                            store={store}
-                        />}
+                        <Route path="/profile"
+                               element={<Profile store={store}/>}
                         />
-
-
-                        {/*<Route path="/dialogs/*" element={<Dialogs messages={props.state.dialogsPage.messages} dialogs={props.state.dialogsPage.dialogs}/>}/>*/}
-                        {/*<Route path="/profile" element={<Profile posts={props.state.profilePage.posts}/>}/>*/}
                     </Routes>
                 </div>
             </div>

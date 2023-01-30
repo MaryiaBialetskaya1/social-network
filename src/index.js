@@ -7,7 +7,6 @@ import App from './App';
 import store from "./redux/redux-store";
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let rerenderEntireTree = (state) =>{
@@ -15,14 +14,9 @@ let rerenderEntireTree = (state) =>{
     root.render(
         <React.StrictMode>
             <App
-                // posts={state.profileReducer.posts}
-                // dialogs={state.dialogsReducer.dialogs}
-                // newPostText={state.profileReducer.newPostText}
-                // messages={state.dialogsReducer.messages}
                 dispatch={store.dispatch.bind(store)}
                 store={store}
             />
-            {/*<App state={state}/>*/}
         </React.StrictMode>
     );
 }
