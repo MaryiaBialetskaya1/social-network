@@ -3,7 +3,7 @@ import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../red
 import MyPosts from "./MyPosts";
 
 const MyPostsContainer = (props) => {
-    debugger;
+
     let state = props.store.getState();
 
     let addPost = () => {
@@ -23,5 +23,3 @@ const MyPostsContainer = (props) => {
 }
 export default MyPostsContainer;
 
-
-// dialogs={state.diaLogsPage.dialogsData}

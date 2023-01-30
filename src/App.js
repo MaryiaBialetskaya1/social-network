@@ -8,7 +8,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import store from "./redux/redux-store";
 
 const App = (props) => {
-debugger;
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
