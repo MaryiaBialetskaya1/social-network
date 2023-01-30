@@ -13,8 +13,8 @@ const DialogsContainer = (props) =>{
         let action = sendMessageCreator();
         props.store.dispatch(action);
     }
-    let onNewMessageChange = (e) => {
-        let body = e.target.value;
+    let onNewMessageChange = (e, body) => {
+        //let body = e.target.value;
         let action = updateNewMessageBodyCreator(body);
         props.store.dispatch(action);
     }
