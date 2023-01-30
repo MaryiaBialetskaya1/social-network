@@ -15,10 +15,10 @@ let rerenderEntireTree = (state) =>{
     root.render(
         <React.StrictMode>
             <App
-                posts={state.profileReducer.posts}
-                dialogs={state.dialogsReducer.dialogs}
-                newPostText={state.profileReducer.newPostText}
-                messages={state.dialogsReducer.messages}
+                // posts={state.profileReducer.posts}
+                // dialogs={state.dialogsReducer.dialogs}
+                // newPostText={state.profileReducer.newPostText}
+                // messages={state.dialogsReducer.messages}
                 dispatch={store.dispatch.bind(store)}
                 store={store}
             />

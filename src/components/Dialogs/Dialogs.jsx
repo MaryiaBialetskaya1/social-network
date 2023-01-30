@@ -10,13 +10,19 @@ const Dialogs = (props) =>{
     let newMessageBody = props.newMessageBody;
 
     let onSendMessageClick = () => {
-        let action = sendMessageCreator();
-        props.dispatch(action);
+        props.onSendMessageClick();
+
+        // let action = sendMessageCreator();
+        // props.dispatch(action);
+
     }
     let onNewMessageChange = (e) => {
+        // let body = e.target.value;
+        // let action = updateNewMessageBodyCreator(body);
+        // props.dispatch(action);
+
         let body = e.target.value;
-        let action = updateNewMessageBodyCreator(body);
-        props.dispatch(action);
+        props.onNewMessageChange(body);
     }
 
     let dialogsElements = props.dialogs.map(d => <DialogItem name={d.name}  id={d.id}/>)
